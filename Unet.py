@@ -22,7 +22,7 @@ from skimage.io import imread, imshow, concatenate_images
 from skimage.transform import resize
 from skimage.morphology import label
 from sklearn.model_selection import train_test_split
-
+from keras import backend as K
 import tensorflow as tf
 
 from keras.models import Model, load_model
@@ -206,6 +206,21 @@ preds_test = model.predict(x_test,verbose=1)
 preds_train_t = (preds_train > 0.5).astype(np.uint8)
 preds_val_t = (preds_val > 0.5).astype(np.uint8)
 preds_test_t = (preds_test > 0.5).astype(np.uint8)
+
+def iou_coef(y_true, y_pred, smooth=1):
+  intersection = K.sum(K.abs(y_true * y_pred), axis=[1,2,3])
+  union = K.sum(y_true,[1,2,3])+K.sum(y_pred,[1,2,3])-intersection
+  iou = K.mean((intersection + smooth) / (union + smooth), axis=0)
+  return iou
+
+def dice_coef(y_true, y_pred, smooth=1):
+  intersection = K.sum(y_true * y_pred, axis=[1,2,3])
+  union = K.sum(y_true, axis=[1,2,3]) + K.sum(y_pred, axis=[1,2,3])
+  dice = K.mean((2. * intersection + smooth)/(union + smooth), axis=0)
+  return dice
+
+print("IOU Coef: ",iou_coef(y_test,preds_test))
+print("Dice_Coef: ",dice_coef(y_test,preds_test))
 
 def plot_sample(X, y, preds, binary_preds, ix=None):
     """Function to plot the results"""
