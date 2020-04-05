@@ -17,7 +17,7 @@ Test/ground Truth/ {masks here}
 
 # Project Title
 
-Semantic Segmentation with performace comparison of Unet,SegNet and DeepLabv3 on MonuSeg Dataset.
+Semantic Segmentation with performace comparison of **Unet**, **SegNet** and **DeepLabv3** on MonSu Dataset.
 Also improving anyone baseline on the same dataset.
 
 ## Getting Started
