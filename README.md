@@ -83,6 +83,7 @@ There are 3 config files for each model where you can set the hyperparameters of
 <!-- CONTACT Author -->
 
 **Saqib Naseeb** - [@Saqib Naseeb] saqibnaseeb14@gmail.com
+
 **Project Link:** [https://github.com/Amiable-Syed/semantic-segmentation](https://github.com/Amiable-Syed/semantic-segmentation)
 
 
