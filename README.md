@@ -45,6 +45,14 @@ The LoadModel notebooks automatically load the model given you download the resp
 ### Config File
 There are 3 config files for each model where you can set the hyperparameters of the respective model. I had to make 3 separate config files of each model because of the difference in the versions of the dependencies.
 
+### Quantitative Results
+| Model | Accuracy | Dice Coefficient | F1 Score | Binary Cross Entropy Loss|
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| SegNet | 89.89% | 0.6551 | 0.7301 | **0.2740** |
+| UNET | 90.45% | 0.7218 | **0.7738** | 0.2474 |
+| DeepLabV3+ | **90.79%** | **0.7707** | **0.7817** | 0.3670 |
+
+
 ## Authors
 * **Saqib Naseeb** - *Initial work* -
 
