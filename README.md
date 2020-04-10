@@ -21,6 +21,16 @@ _**Network Summary of these diagrams can be seen in the ipython notebooks**_
 ### DEEPLABv3 +
 ![DeepLab v3+ Architecture](https://www.researchgate.net/profile/Manu_Goyal9/publication/330871054/figure/fig3/AS:722795042455552@1549339175407/Detailed-architecture-of-DeeplabV3-for-segmentation-on-skin-lesion-dataset-25.ppm)
 
+
+### Built With
+Major Libraries that were used in this project,
+* [Pandas](https://pandas.pydata.org/)
+* [Matplotlib](https://matplotlib.org/)
+* [Numpy](https://numpy.org)
+* [Keras](https://keras.io)
+* [Tensorflow](https://tensorflow.org)
+
+
 ## Authors
 
 * **Saqib Naseeb** - *Initial work* -
