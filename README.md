@@ -21,6 +21,13 @@ _**Network Summary of these diagrams can be seen in the ipython notebooks**_
 ### DEEPLABv3 +
 ![DeepLab v3+ Architecture](https://www.researchgate.net/profile/Manu_Goyal9/publication/330871054/figure/fig3/AS:722795042455552@1549339175407/Detailed-architecture-of-DeeplabV3-for-segmentation-on-skin-lesion-dataset-25.ppm)
 
+<!-- GETTING STARTED -->
+
+## Getting Started
+Load and run the notebooks given in the repo in Google Collab. 
+
+### Obtaining Data
+Data publically available will be downloaded automatically from google drive using gdown. 
 
 ### Pre-Requisites
 Libraries used in the project are:
@@ -29,10 +36,16 @@ Libraries used in the project are:
 * [Numpy](https://numpy.org)
 * [Keras](https://keras.io)
 * [Tensorflow](https://tensorflow.org)
+* Google colab (Although not recommended)
 
+<!-- USAGE EXAMPLES -->
+## Usage
+The LoadModel notebooks automatically load the model given you download the respective model given in the repository. The Deeplabv3 model was heavy so that is kept on the google drive, made public and LoadModel notebook deeplab will automatically download that in the current directory using gdown
+
+### Config File
+There are 3 config files for each model where you can set the hyperparameters of the respective model. I had to make 3 separate config files of each model because of the difference in the versions of the dependencies.
 
 ## Authors
-
 * **Saqib Naseeb** - *Initial work* -
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
