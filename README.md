@@ -8,9 +8,6 @@
 Originally the MonuSeg dataset consists of 30 training images, each of size 1000 x 1000 in RGB format with its Ground Truth Masks as Single Channel Binary Images. In addition to these, there are 14 testing images of the same dimensions.
 Moreover, I extracted patches of size 256 x 256 from the MonuSeg Dataset with 50% overlapping resulting in total 1080 patches.
 
-
-profile/Alan_Jackson9/publication/323597886/figure/fig2/AS:601386504957959@1520393124691/Convolutional-neural-network-CNN-architecture-based-on-UNET-Ronneberger-et-al.png
-
 ### Network Diagrams
 
 _**Network Summary of these diagrams can be seen in the ipython notebooks**_
