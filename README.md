@@ -69,10 +69,12 @@ There are 3 config files for each model where you can set the hyperparameters of
 
 ### Training and Validation Graphs
 
-#### UNET
-![UNET Training Loss][unet-train-graph]
 #### SegNet
 ![SegNet Training Loss][segnet-train-graph]
+
+#### UNET
+![UNET Training Loss][unet-train-graph]
+
 #### Deep Lab v3
 ![DeepLab Training Loss][deeplab-train-graph]
 
