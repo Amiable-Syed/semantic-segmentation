@@ -12,13 +12,13 @@ Moreover, I extracted patches of size 256 x 256 from the MonuSeg Dataset with 50
 
 _**Network Summary of these diagrams can be seen in the ipython notebooks**_
 
-#### UNET
+### UNET
 ![UNET Architecture](https://www.researchgate.net/profile/Alan_Jackson9/publication/323597886/figure/fig2/AS:601386504957959@1520393124691/Convolutional-neural-network-CNN-architecture-based-on-UNET-Ronneberger-et-al.png)
 
-#### SegNet
+### SEGNET
 ![SegNet Architecture](https://www.researchgate.net/profile/Vijay_Badrinarayanan/publication/283471087/figure/fig1/AS:391733042008065@1470407843299/An-illustration-of-the-SegNet-architecture-There-are-no-fully-connected-layers-and-hence.png)
 
-#### DeepLab v3+
+### DEEPLABv3 +
 ![DeepLab v3+ Architecture](https://www.researchgate.net/profile/Manu_Goyal9/publication/330871054/figure/fig3/AS:722795042455552@1549339175407/Detailed-architecture-of-DeeplabV3-for-segmentation-on-skin-lesion-dataset-25.ppm)
 
 ## Authors
