@@ -8,10 +8,21 @@
 Originally the MonuSeg dataset consists of 30 training images, each of size 1000 x 1000 in RGB format with its Ground Truth Masks as Single Channel Binary Images. In addition to these, there are 14 testing images of the same dimensions.
 Moreover, I extracted patches of size 256 x 256 from the MonuSeg Dataset with 50% overlapping resulting in total 1080 patches.
 
-# semantic-segmentation
-Semantic Segmentation on Monsu Dataset using Unet, SetNet and DeeplLabv3
 
+profile/Alan_Jackson9/publication/323597886/figure/fig2/AS:601386504957959@1520393124691/Convolutional-neural-network-CNN-architecture-based-on-UNET-Ronneberger-et-al.png
 
+### Network Diagrams
+
+_**Network Summary of these diagrams can be seen in the ipython notebooks**_
+
+#### UNET
+![UNET Architecture](profile/Alan_Jackson9/publication/323597886/figure/fig2/AS:601386504957959@1520393124691/Convolutional-neural-network-CNN-architecture-based-on-UNET-Ronneberger-et-al.png)
+
+#### SegNet
+![SegNet Architecture](profile/Vijay_Badrinarayanan/publication/283471087/figure/fig1/AS:391733042008065@1470407843299/An-illustration-of-the-SegNet-architecture-There-are-no-fully-connected-layers-and-hence.png)
+
+#### DeepLab v3+
+![DeepLab v3+ Architecture](profile/Manu_Goyal9/publication/330871054/figure/fig3/AS:722795042455552@1549339175407/Detailed-architecture-of-DeeplabV3-for-segmentation-on-skin-lesion-dataset-25.ppm)
 
 ## Authors
 
