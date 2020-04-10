@@ -79,8 +79,13 @@ There are 3 config files for each model where you can set the hyperparameters of
 ![DeepLab Training Loss][deeplab-train-graph]
 
 
-## Authors
-* **Saqib Naseeb** - *Initial work* -
+## Contact Authors
+<!-- CONTACT Author -->
+
+Saqib Naseeb - [@EhsanBinEjaz] saqibnaseeb14@gmail.com
+
+Project Link: [https://github.com/Amiable-Syed/semantic-segmentation](https://github.com/Amiable-Syed/semantic-segmentation)
+* **Saqib Naseeb** 
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/saqib-naseeb/
