@@ -89,4 +89,9 @@ There are 3 config files for each model where you can set the hyperparameters of
 
 [unet-qual-res]: unet.png
 [segnet-qual-res]: segNet_GT.png
-[deeplabv3+-qual-res]: deeplabv3.png
+[deeplab-qual-res]: deeplabv3.png
+
+[unet-train-graph]: Unet_plot.png
+[segnet-train-graph]: segnet_plot.png
+[deeplab-train-graph]: deeplabv3_plot.png
+
