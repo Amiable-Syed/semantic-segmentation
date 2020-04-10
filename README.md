@@ -1,69 +1,92 @@
-# semantic-segmentation
-Semantic Segmentation on Monsu Dataset using Unet, SetNet and DeeplLabv3
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Stackoverflow][stackoverflow-shield]][stackoverflow-url]
+[![Essayshark][essayshark-shield]][essayshark-url]
 
-Unet would require the directory structure like this:
+<!-- ABOUT THE PROJECT -->
+## About The Project
+              
+Originally the MonuSeg dataset consists of 30 training images, each of size 1000 x 1000 in RGB format with its Ground Truth Masks as Single Channel Binary Images. In addition to these, there are 14 testing images of the same dimensions.
+Moreover, I extracted patches of size 256 x 256 from the MonuSeg Dataset with 50% overlapping resulting in total 1080 patches.
 
-## For Training Data:
+### Network Diagrams
 
-Training/Images/ {.png files}
-Training/ground Truth/ {masks here}
+_**Network Summary of these diagrams can be seen in the ipython notebooks**_
 
-## For Test Data: 
-Test/Images/ {.png files}
-Test/ground Truth/ {masks here}
+### UNET
+![UNET Architecture](https://www.researchgate.net/profile/Alan_Jackson9/publication/323597886/figure/fig2/AS:601386504957959@1520393124691/Convolutional-neural-network-CNN-architecture-based-on-UNET-Ronneberger-et-al.png)
 
+### SEGNET
+![SegNet Architecture](https://www.researchgate.net/profile/Vijay_Badrinarayanan/publication/283471087/figure/fig1/AS:391733042008065@1470407843299/An-illustration-of-the-SegNet-architecture-There-are-no-fully-connected-layers-and-hence.png)
 
+### DEEPLABv3 +
+![DeepLab v3+ Architecture](https://www.researchgate.net/profile/Manu_Goyal9/publication/330871054/figure/fig3/AS:722795042455552@1549339175407/Detailed-architecture-of-DeeplabV3-for-segmentation-on-skin-lesion-dataset-25.ppm)
 
-
-# Project Title
-
-Semantic Segmentation with performace comparison of **Unet**, **SegNet** and **DeepLabv3** on MonSu Dataset.
-Also improving anyone baseline on the same dataset.
+<!-- GETTING STARTED -->
 
 ## Getting Started
+Load and run the notebooks given in the repo in Google Collab. 
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+### Obtaining Data
+Data publically available will be downloaded automatically from google drive using gdown. 
 
-### Prerequisites
+### Pre-Requisites
+Libraries used in the project are:
+* [Pandas](https://pandas.pydata.org/)
+* [Matplotlib](https://matplotlib.org/)
+* [Numpy](https://numpy.org)
+* [Keras](https://keras.io)
+* [Tensorflow](https://tensorflow.org)
+* Google colab (Although not recommended)
 
-What things you need to install the software and how to install them
+<!-- USAGE EXAMPLES -->
+## Usage
+The LoadModel notebooks automatically load the model given you download the respective model given in the repository. The Deeplabv3 model was heavy so that is kept on the google drive, made public and LoadModel notebook deeplab will automatically download that in the current directory using gdown
 
-```
-Opencv2
-keras
-pandas
-numpy
-matplotlib
-tensorflow
-```
+### Config File
+There are 3 config files for each model where you can set the hyperparameters of the respective model. I had to make 3 separate config files of each model because of the difference in the versions of the dependencies.
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+#### * (i)Qualitative Results (i)Quantitative Results (ii)Training and Validation graphs*
 
 
+### Qualitative Results
 
-## Deployment
+#### SegNet
+![SegNet Results][segnet-qual-res]
 
-Will share in the future
+#### UNET
+![UNET Results][unet-qual-res]
 
+#### Deep Lab v3+
+![DeepLab Results][deeplab-qual-res]
+
+### Quantitative Results
+| Model | Accuracy | Dice Coefficient | F1 Score | Binary Cross Entropy Loss|
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| SegNet | 89.89% | 0.6551 | 0.7301 | **0.2740** |
+| UNET | 90.45% | 0.7218 | **0.7738** | 0.2474 |
+| DeepLabV3+ | **90.79%** | **0.7707** | **0.7817** | 0.3670 |
+
+
+### Training and Validation Graphs
+
+#### UNET
+![UNET Training Loss][unet-train-graph]
+#### SegNet
+![SegNet Training Loss][segnet-train-graph]
+#### Deep Lab v3
+![DeepLab Training Loss][deeplab-train-graph]
 
 
 ## Authors
-
 * **Saqib Naseeb** - *Initial work* -
 
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/saqib-naseeb/
+[stackoverflow-shield]:https://img.shields.io/badge/stackover-flow-orange
+[stackoverflow-url]:https://stackoverflow.com/users/4938828/saqib-naseeb
+[essayshark-shield]:https://img.shields.io/badge/Essay-Shark-blue
+[essayshark-url]:https://essayshark.com/writers/amiablesyed.html
+
+[unet-qual-res]: unet.png
+[segnet-qual-res]: segNet_GT.png
+[deeplabv3+-qual-res]: deeplabv3.png
